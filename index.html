@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso do Balacobaco</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/capelo logo.png">
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+            :root{
+                --corHeader: #353553;
+                --corPrincipal: #22223a;
+                --corPrincipal2: #353553;
+                --corComplementar1: #f2e9e4;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            .imgreact {
+                display: flex;
+                justify-content: center;
+            }
+
+            .imgreact img {
+                width: 8%;
+            }
+
+            .cordefundo{
+                background-color: var(--corPrincipal);
+                width: 100%;
+                height: 100vh;
+            }
+
+            .imagemdefundo{
+                background-image: url(assets/images/megafone.png);
+                background-position: bottom left ;
+                background-size: 25%;
+                background-repeat: no-repeat;
+                margin: 0;
+                width: 100%;
+                height: 100vh;
+            }
+
+            .cordefundo2{
+                background-color: var(--corPrincipal2);
+                width: 100%;
+                height: 150vh;
+            }
+            
+            .menu ul {
+                list-style-type: none;
+            }
+
+            .menu ul li {
+                margin-left: 20px;
+                color: var(--corComplementar1);
+                font-family: 'Playfair Display';
+            }
+
+            .barraNav {
+                background-color: var(--corHeader);
+            }
+
+            .flex {
+                display: flex;
+            }
+
+            .flex2 {
+                display: flex;
+                margin-top: 1%;
+            }
+
+            .sombralogo {
+                filter: drop-shadow(0px 0px 3px var(--corComplementar1));
+            }
+
+            .textop1 {
+                font-family: 'Bebas Neue', sans-serif;
+                color:var(--corComplementar1);
+                font-size: 5rem;
+                text-align: center;
+                margin: 0;
+            }
+
+            .textop2 {
+                font-family: 'Playfair Display', sans-serif;
+                color: var(--corComplementar1);
+                font-size: 1.8rem;
+                text-align: center;
+                margin-bottom: 8%;
+                line-height: 1.5;
+            }
+
+            .textop3 {
+                font-family: 'Bebas Neue', sans-serif;
+                color: var(--corComplementar1);
+                font-size: 5rem;
+                text-align: center;
+                margin: 0;
+            }
+
+            .textop4 {
+                font-family: 'Playfair Display', sans-serif;
+                color:var(--corPrincipal);
+                font-size: 2.5rem;
+                text-align: center;
+                margin-bottom: 8%;
+                line-height: 1.5;
+            }
+
+            a:link, a:visited {
+                color: var(--corComplementar1);
+                padding: 0px 10px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            a:hover, a:active {
+                background-color: var(--corPrincipal);
+                color: var(--corComplementar1);
+            }
+
+            .card{
+                border-radius: 2%;
+                background-color: var(--corPrincipal);
+                color: var(--corNeutro1);
+                width: 15%;
+                margin: 1%;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                margin-left: 13%;
+            }
+            
+            .card img{
+                width: 70%;
+                display: flex;
+                margin: 0 auto 0 auto;
+            }
+
+            .card p {
+                width: 100%;
+                text-align: center;
+                font-family: 'Bebas Neue', sans-serif;
+                color: var(--corComplementar1);
+                font-size: 2rem;
+                margin: 0;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <!-----Cabeçalho----->
+        <header>
+            <nav class="barraNav flex">
+                <div class="logo">
+                    <img src="assets/images/capelo logo.png " alt="Logo" height="50px" class="sombralogo">
+                </div>
+
+                <div class="menu">
+                    <ul class="flex">
+                        <li><a href="#idContato">Home</a></li>
+                        <li><a href="#idCurso">Curso</a></li>
+                        <li><a href="#idContato">Avaliações</a></li>
+                        <li><a href="#idContato">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-----Principal----->
+        <main>
+            <section class="cordefundo">
+                <div class="imagemdefundo">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <p class="textop1">
+                                    Preste atenção! <br>
+                                    Não perca esta oportunidade!
+                    </p>
+                    <p class="textop2">
+                            O curso de REACT está com 50 % de desconto. <br>
+                            Acesse agora a aba "Inscrição" para garantir a vaga na turma de 2023!
+                    </p>
+                    <div class="imgreact">
+                                <img src="assets/images/reactjs.png" alt="logo">
+                    </div>
+                </div>
+            </section>
+            <section class="cordefundo2">
+                <br><p id="idCurso" class="textop3">O que vamos aprender no curso?</p><br><br>
+                <div class="flex2">
+                    <div class="card">
+                        <img src="assets/images/html1.png" alt="html">
+                        <p>HTML</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/css1.png" alt="css">
+                        <p>CSS</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/js1.png" alt="js">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="flex2">
+                    <div class="card">
+                        <img src="assets/images/git1.png" alt="git">
+                        <p>Git</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/github1.png" alt="github">
+                        <p>GitHub</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/typescript1.png" alt="typescript">
+                        <p>TypeScript</p>
+                    </div>
+                </div>
+                <div class="flex2">
+                    <div class="card">
+                        <img src="assets/images/react1.png" alt="react">
+                        <p>React</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/bootstrap1.png" alt="bootstrap">
+                        <p>BootStrap</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/java1.png" alt="java">
+                        <p>Java</p>
+                    </div>
+                </div>
+            </section>
+            <section class="cordefundo">
+                <br><p id="Avaliações" class="textop1">O que nossos ex-alunos falaram sobre o curso?</p>
+            </section>
+        </main>
+        <!-----Rodapé----->
+        <footer>
+
+        </footer>
+
+    </body>
+</html>
